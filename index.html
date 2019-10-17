@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="Title-Bar">My day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="MyDay.css" />
+
+</head>
+
+<body  >
+    <h1 id="Page-Title">My Day</h1>
+
+    <input type="text" name="txtModCode" id="txtModCode" placeholder="Enter New Title" />
+    <button onclick="ChangTitleButton()">Change Title</button>
+
+    <p id="Date"></p>
+    <p id="Time"></p>
+
+    <div class="row">
+        <div class="column" style="background-color:rgb(255, 231, 179);">
+            <div id="TodayTask">
+                <p>Today’s task list</p>
+            </div>
+            <br>
+            <button id="NextDay" onclick="ChangeDate()">Next day Task</button>
+            <button id="Remove" onclick="ChangeDateBack()" hidden>Remove Next Day Task</button>
+            <div id="TodayTask1" hidden>
+                <p>Tomorrow's Task</p>
+            </div>
+        </div>
+        <div class="column" style="background-color:rgb(85, 207, 255);">
+              <div>
+                    <a href=""></a><img src="https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/2040/f/weather.jpg" width="150" height="100" title="White flower" alt="Flower"></a>
+              </div>
+             
+               
+            <div class="temperature">
+                <h2 class="temperature-degree">0</h2>
+                <div class="temperature-description">it is cold</div>
+                <div class="humidity">humidity</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <label> Change Background Color </label>
+    <br>
+    <br>
+    
+    <select  onchange="ChooseColor(this.value);">
+        <option value="##00FFFF">Aqua</option>
+        <option value="#C0C0C0">Selver</option>
+        <option value="#808080">Gray</option>
+        <option selected value="white">white</option>
+        <select>
+            <br>
+            <br>
+                
+            <button class="block" onclick="slideUp('box');">Hide text</button>
+
+            <div id="box">
+            <p>
+                    To modify the task line 202 to line 214 in js file choose the id number and change any attrbute. <br>
+                    The also page is responsive for mobile <br>
+
+                
+            </p>
+            </div>
+           
+
+</body>
+<button class="block-down" onclick="slideDown('box');" >Show text </button>
+
+<script src="Weather.js"></script>
+<script src="MyDay.js"></script>
+
+</html>
